@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아주대 인지연구실</title>
+    <link href="{% static 'css/ex01.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<!-- body head 창 사이즈 고정 설정 -->
+<body onresize="parent.resizeTo(1260,800)" onload="parent.resizeTo(1260,800)">
+
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1> 제목..  </h1>
+      </div>
+      <div id="jb-content">
+        미래인간 AI 영상 넣어야함
+
+      </div>
+      <div id="jb-footer" >
+<!-- 영상 재생 완료되면 button 보이게 설정. -->
+          <div> </div>
+
+          <div style="float:right">   <button class="w-btn-outline w-btn-gray-outline" onclick="location.href='{% url 'p5' %}'" style="text-align:center"> 다음 </button>  </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

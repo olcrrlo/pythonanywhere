@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아주대 인지연구실</title>
+    <link href="{% static 'css/k102.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div id="jb-container-intro">
+      <div id="jb-header-intro">
+        <h2> 아주대학교 </br> 사고과정의 이해 _ 연구참여점수 확인  </h2>
+      </div>
+      <div id="jb-content-intro">
+
+        <form action="{% url 'check' %}" method="post">
+            {% csrf_token %}
+            <h3> * 학번을 입력해주세요. </h3>
+            &nbsp;&nbsp;&nbsp;
+            {{ form }}
+            <input type="submit" value="  확인  " style="padding:9px">  </input>
+        </form>
+
+      </div>
+      <div id="jb-footer-intro" >
+         <h5>
+           연구참여점수 관련 문제가 있을시 조교에게 연락주세요.</br>
+           조교 이다은 </br>
+           이메일 daeunlee@ajou.ac.kr
+         </h5>
+      </div>
+    </div>
+
+</body>
+</html>

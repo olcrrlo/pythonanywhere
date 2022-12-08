@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ho">
+<head>
+    <meta charset="UTF-8">
+    <title>아주대 인지연구실</title>
+    <link href="{% static 'css/k102.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+{% if score_list %}
+
+
+    <div id="jb-container-intro">
+      <div id="jb-header-intro">
+        <h2> 아주대학교 </br> 사고과정의 이해 _ 연구참여점수 확인  </h2>
+      </div>
+      <div id="jb-content-intro">
+        <h3> * 전체 연구 중 총 4개의 연구참여시 만점이 부여됩니다. </br> &nbsp;&nbsp;그 이하 갯수의 연구 참여점수는 25%씩 반영됩니다. </h3> </br>
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th style="width:11%"> 학번 </th>
+                    <th style="width:11%"> 연구1 </th>
+                    <th style="width:11%"> 연구2 </th>
+                    <th style="width:11%"> 연구3 </th>
+                    <th style="width:11%"> 연구4 </th>
+                    <th style="width:11%"> 연구5 </th>
+                    <th style="width:11%"> 연구6 </th>
+                    <th style="width:11%"> 연구7 </th>
+                    <th style="width:11%"> 연구8 </th>
+                </tr>
+                <tr style="font-size:9px">
+                    <th>  </th>
+                    <th> 길찾기에 필요한 인지적 능력을 알아보는 연구 </th>
+                    <th> 불확실성에 대한 인내력 부족과 내재화 증상의 관계: 부적응적 상위인지신념과 경험회피의 순차적 매개효과 </th>
+                    <th> 마음챙김 수행의 효과에 대한 탐색적 연구 </th>
+                    <th> 범주학습과제 (EBS) </th>
+                    <th> 매체를 통해 유발된 정서에 관한 연구 </th>
+                    <th> 게임 능력에 대한 마음가짐이 동기에 미치는 영향 </th>
+                    <th> 동전 던지기 예측에 영향을 미치는 변인 탐색 </th>
+                    <th> SNS 정보에 관한 인지 과정 연구 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> {{ score_list.c_id }} </th>
+                    <td data-title="연구1 "> {{ score_list.test1 }} </td>
+                    <td data-title="연구2 "> {{ score_list.test2 }} </td>
+                    <td data-title="연구3 "> {{ score_list.test3 }} </td>
+                    <td data-title="연구4 "> {{ score_list.test4 }} </td>
+                    <td data-title="연구5 "> {{ score_list.test5 }} </td>
+                    <td data-title="연구6 "> {{ score_list.test6 }} </td>
+                    <td data-title="연구7 "> {{ score_list.test7 }} </td>
+                    <td data-title="연구8 "> {{ score_list.test8 }} </td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+      <div id="jb-footer-intro" >
+         <h5>
+           연구참여점수 관련 문제가 있을시 조교에게 연락주세요.</br>
+           조교 이다은 </br>
+           이메일 daeunlee@ajou.ac.kr
+         </h5>
+      </div>
+    </div>
+
+{% elif new_id %}
+    <p> {{ new_id }}는 확인되지 않는 학번입니다. </br> 확인 후 다시 입력해주세요. </p>
+    <button onclick="location.href='{% url 'check' %}'"> 이전 </button>
+{% endif %}
+
+</body>
+</html>

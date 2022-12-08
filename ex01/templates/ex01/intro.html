@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 아주대 인지연구실 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/ex01.css' %}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="jb-container-intro">
+      <div id="jb-header-intro">
+        <h1>  CLT가 로봇과의 심리적 거리에 미치는 영향 </h1>
+      </div>
+      <div id="jb-content-intro">
+        <h2> 안내사항 </h2>
+          <p>
+            * <b> 실험 진행기간 </b> : ~ 2022년 12월 16일 (금) 까지 </br>
+            * <b> 실험시 소요시간 </b> : 30분 내 </br>
+            * <b> 참가 보상 </b> :  </br> </br>
+              <b> * 주의사항  </b> </br>
+              - 연구 실시는 온라인 <b> <font color="red"> '컴퓨터' </font> </b> 에서만 진행 해주세요. (핸드폰 및 태블릿 X) </br>
+              - <b> <font color="red"> 사운드</font></b>가 <b>필수</b>이므로, 이어폰 및 스피커를 사용할 수 있는 환경에서 진행 해주세요. </br>
+              - 실험 진행시 페이지를 전체화면으로 시작해주세요. </br></br>
+              - 이전 페이지로 돌아 갈 수 없으므로 꼼꼼히 읽고 진행해주세요.</br>
+
+              - 주의 사항을 다 읽고 숙지 했다면 실험 시작 버튼을 눌러주세요.
+
+          </p>
+      </div>
+      <div id="jb-footer-intro" >
+        <div>
+            연구 담당자 이다은 (아주대학교 심리학과 석사과정, daeunlee@ajou.ac.kr) </br>
+            <font size="2"> 실험과 관련하여 궁금한 사항이 있는경우 메일로 연락주세요. </font>
+            <div style="float:right">   <button  class="w-btn w-btn-red " onclick="javascript:void(window.open('{% url 'p1' %}','start', 'width=1260, height=800, status=no, toolbar=no'))" style="text-align:center"> 실험 시작 </button>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

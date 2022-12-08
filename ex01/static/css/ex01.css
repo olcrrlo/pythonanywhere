@@ -1,0 +1,401 @@
+<style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+      .top {
+
+      }
+
+      #jb-container-intro {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header-intro {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content-intro {
+        width: 900px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-footer-intro {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+      }
+      #jb-header {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      #jb-content {
+        width: 900px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        text-align: center;
+      }
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+      }
+      @media ( max-width: 670px ) {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+
+      }
+
+      .w-btn-outline {
+            position: relative;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+      }
+      .w-btn-outline:hover {
+            letter-spacing: 2px;
+            transform: scale(1.1);
+            cursor: pointer;
+      }
+      .w-btn-outline:active {
+            transform: scale(1.2);
+      }
+
+      .w-btn-gray-outline {
+            border: 3px solid #a3a1a1;
+            color: #6e6e6e;
+      }
+      .w-btn-gray-outline:hover {
+            background-color: #a3a1a1;
+            color: #e3dede;
+      }
+      .w-btn {
+            position: relative;
+            border: none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-family: "paybooc-Light", sans-serif;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+      }
+      .w-btn:hover {
+        letter-spacing: 2px;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+      .w-btn-red {
+        background-color: #ff5f2e;
+        color: #e1eef6;
+      }
+
+      /* 테이블 css
+     .blueone th {
+          padding: 10px;
+          color: #168;
+          border-bottom: 3px solid #168;
+          text-align: left;
+     }
+     .blueone td {
+          color: #669;
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+     }
+     .blueone tr:hover td {
+       color: #004;
+     }
+     */
+
+     /* Include CSS Normalize */
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      float: left;
+      margin: 0 0 2em;
+    }
+    table thead {
+      border-bottom: 3px solid #008cba;
+    }
+    table thead th {
+      padding: 0.35em 0 0.35em;
+      font-weight: 400;
+      text-align: left;
+      font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+      font-size: 1.2em;
+    }
+    table tbody {
+      border-bottom: 3px solid #008cba;
+    }
+    table tbody tr {
+      border-bottom: 2px solid #ddd;
+    }
+    table tbody tr td {
+      padding: 0.75em 0;
+    }
+    table tbody tr td a {
+      color: #008cba;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 0.5em 0 0;
+    }
+    table tbody tr td a:hover, table tbody tr td a:active, table tbody tr td a:focus {
+      color: #006687;
+      border: none;
+    }
+    table tfoot td {
+      padding: 0.35em 0 0.35em;
+      text-align: left;
+      font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+      font-size: 1.25em;
+    }
+
+    @media screen and (min-width: 1000px) {
+      table {
+        width: 100%;
+      }
+      table thead {
+        border-bottom: 3px solid #008cba;
+      }
+      table tbody tr {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    .rwd-table {
+      display: block;
+    }
+    .rwd-table tbody {
+      border: none;
+    }
+    .rwd-table tbody, #rwd-table th, #rwd-table td, #rwd-table tr, #rwd-table tfoot {
+      display: block;
+    }
+    .rwd-table thead {
+      display: none;
+    }
+    .rwd-table tr {
+      float: left;
+      width: 100%;
+      margin: 0 0 1em;
+      border: 1px solid #ddd;
+      box-shadow: 0px 2px 5px 0px #ddd;
+      border-radius: 4px;
+      border-top: 5px solid #008cba;
+    }
+    .rwd-table tr td {
+      padding: 0.5em 0.5em 0.5em 50%;
+      float: left;
+      width: 100%;
+    }
+    .rwd-table tr td:before {
+      width: 100%;
+      display: block;
+      float: left;
+      padding: 0.5em 0.5em 0.5em 0;
+      clear: both;
+      margin: -0.5em 0 0 -100%;
+      font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+      font-size: 1.125em;
+    }
+    @media screen and (min-width: 600px) {
+      .rwd-table {
+        display: table;
+        border: none;
+      }
+      .rwd-table tbody {
+        border-bottom: 3px solid #008cba;
+      }
+      .rwd-table th, #rwd-table td {
+        display: table-cell;
+      }
+      .rwd-table tr {
+        display: table-row;
+        border: none;
+        border-bottom: 1px solid #eee;
+        float: none;
+        margin: 0;
+        box-shadow: none;
+      }
+      .rwd-table tr td {
+        padding: 0.75em 0 0.75em 0.25em;
+        float: none;
+        width: auto;
+      }
+      .rwd-table tr td:before {
+        padding: 0 !important;
+      }
+      .rwd-table thead {
+        display: table-header-group;
+      }
+      .rwd-table tbody, #rwd-table tfoot {
+        display: table-row-group;
+      }
+      .rwd-table tr:nth-of-type(even) {
+        background: none;
+      }
+    }
+
+    .rwd-table-large {
+      display: block;
+    }
+    .rwd-table-large tbody {
+      border: none;
+    }
+    .rwd-table-large tbody, #rwd-table-large th, #rwd-table-large td, #rwd-table-large tr, #rwd-table-large tfoot {
+      display: block;
+    }
+    .rwd-table-large thead {
+      display: none;
+    }
+    .rwd-table-large tr {
+      float: left;
+      width: 100%;
+      margin: 0 0 1em;
+      border: 1px solid #ddd;
+      box-shadow: 0px 2px 5px 0px #ddd;
+      border-radius: 4px;
+      border-top: 5px solid #008cba;
+    }
+    .rwd-table-large tr td {
+      padding: 0.5em 0.5em 0.5em 50%;
+      float: left;
+      width: 100%;
+    }
+    .rwd-table-large tr td:before {
+      width: 100%;
+      display: block;
+      float: left;
+      padding: 0.5em 0.5em 0.5em 0;
+      clear: both;
+      margin: -0.5em 0 0 -100%;
+      font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+      font-size: 1.125em;
+    }
+    @media screen and (min-width: 1000px) {
+      .rwd-table-large {
+        display: table;
+        border: none;
+      }
+      .rwd-table-large tbody {
+        border-bottom: 3px solid #008cba;
+      }
+      .rwd-table-large th, #rwd-table-large td {
+        display: table-cell;
+      }
+      .rwd-table-large tr {
+        display: table-row;
+        border: none;
+        border-bottom: 1px solid #eee;
+        float: none;
+        margin: 0;
+        box-shadow: none;
+      }
+      .rwd-table-large tr td {
+        padding: 0.75em 0 0.75em 0.25em;
+        float: none;
+        width: auto;
+      }
+      .rwd-table-large tr td:before {
+        padding: 0 !important;
+      }
+      .rwd-table-large thead {
+        display: table-header-group;
+      }
+      .rwd-table-large tbody, #rwd-table-large tfoot {
+        display: table-row-group;
+      }
+      .rwd-table-large tr:nth-of-type(even) {
+        background: none;
+      }
+    }
+
+    .rwd-table tbody tr td:nth-of-type(1):before {
+      content: "Heading Col 1";
+    }
+    @media screen and (min-width: 600px) {
+      .rwd-table tbody tr td:nth-of-type(1):before {
+        content: "";
+      }
+    }
+    .rwd-table tbody tr td:nth-of-type(2):before {
+      content: "Heading Col 2";
+    }
+    @media screen and (min-width: 600px) {
+      .rwd-table tbody tr td:nth-of-type(2):before {
+        content: "";
+      }
+    }
+    .rwd-table tbody tr td:nth-of-type(3):before {
+      content: "Heading Col 3";
+    }
+    @media screen and (min-width: 600px) {
+      .rwd-table tbody tr td:nth-of-type(3):before {
+        content: "";
+      }
+    }
+
+    .rwd-table-large tbody tr td:nth-of-type(1):before {
+      content: "Heading Col 1";
+    }
+    @media screen and (min-width: 1000px) {
+      .rwd-table-large tbody tr td:nth-of-type(1):before {
+        content: "";
+      }
+    }
+    .rwd-table-large tbody tr td:nth-of-type(2):before {
+      content: "Heading Col 2";
+    }
+    @media screen and (min-width: 1000px) {
+      .rwd-table-large tbody tr td:nth-of-type(2):before {
+        content: "";
+      }
+    }
+    .rwd-table-large tbody tr td:nth-of-type(3):before {
+      content: "Heading Col 3";
+    }
+    @media screen and (min-width: 1000px) {
+      .rwd-table-large tbody tr td:nth-of-type(3):before {
+        content: "";
+      }
+    }
+    .rwd-table-large tbody tr td:nth-of-type(4):before {
+      content: "Heading Col 4";
+    }
+    @media screen and (min-width: 1000px) {
+      .rwd-table-large tbody tr td:nth-of-type(4):before {
+        content: "";
+      }
+    }
+
+    .input_text {
+        width: 250px;
+        height: 40px;
+        border-top: 3px solid gray;
+        border-left: 1.5px solid gray;
+        border-right: 1.5px solid gray;
+        border-bottom: 3px solid gray;
+        margin: 20px;
+
+    }
+
+
+</style>

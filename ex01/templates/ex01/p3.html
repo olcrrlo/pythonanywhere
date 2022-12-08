@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아주대 인지연구실</title>
+    <link href="{% static 'css/ex01.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<!-- body head 창 사이즈 고정 설정 -->
+<body onresize="parent.resizeTo(1260,800)" onload="parent.resizeTo(1260,800)">
+
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1> clt 사회적 거리 측정  <br> 영상 내용에 대한 체크 질문 3개 중 1 선택으로 나오게 </h1>
+      </div>
+      <div id="jb-content">
+
+          <form>
+            <table class="rwd-table">
+                <thead>
+                    <tr>
+                        <th style="width:5%"> 문항 </th>
+                        <th style="width:45%"> 질문 </th>
+                        <th style="width:10%"> 매우 동의하지 않는다 </br> 1</th>
+                        <th style="width:10%"> 동의하지 </br> 않는다 </br>2 </th>
+                        <th style="width:10%"> 보통이다 </br></br>3</th>
+                        <th style="width:10%"> 동의한다 </br></br> 4</th>
+                        <th style="width:10%"> 매우 </br> 동의한다 </br> 5</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td style="text-align:left"> 로봇의 사용은 나와 같은 사람들에게 큰 영향을 미칠 것 같지 않다. </td>
+                      <td> <input type="radio" name="clt1" value="1" > </td>
+                      <td> <input type="radio" name="clt1" value="2" >  </td>
+                      <td> <input type="radio" name="clt1" value="3" >  </td>
+                      <td> <input type="radio" name="clt1" value="4" >  </td>
+                      <td> <input type="radio" name="clt1" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td style="text-align:left"> 로봇의 사용은 내 가족과 친구들에게 큰 영향을 미치지 않을 것 같다. </td>
+                      <td> <input type="radio" name="clt2" value="1" > </td>
+                      <td> <input type="radio" name="clt2" value="2" >  </td>
+                      <td> <input type="radio" name="clt2" value="3" >  </td>
+                      <td> <input type="radio" name="clt2" value="4" >  </td>
+                      <td> <input type="radio" name="clt2" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 3 </td>
+                      <td style="text-align:left"> 로봇 발전은 평균적인 한국인들에게 큰 영향을 미칠 것 같지 않다. </td>
+                      <td> <input type="radio" name="clt3" value="1" > </td>
+                      <td> <input type="radio" name="clt3" value="2" >  </td>
+                      <td> <input type="radio" name="clt3" value="3" >  </td>
+                      <td> <input type="radio" name="clt3" value="4" >  </td>
+                      <td> <input type="radio" name="clt3" value="5" >  </td>
+                  </tr>
+                </tbody>
+            </table>
+
+
+
+          </form>
+      </div>
+      <div id="jb-footer" >
+          <div style="float:right">   <button class="w-btn-outline w-btn-gray-outline" onclick="location.href='{% url 'p4' %}'" style="text-align:center"> 다음 </button>  </div>
+      </div>
+    </div>
+
+</body>
+</html>

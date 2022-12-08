@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아주대 인지연구실</title>
+    <link href="{% static 'css/ex01.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<!-- body head 창 사이즈 고정 설정 -->
+<body onresize="parent.resizeTo(1260,800)" onload="parent.resizeTo(1260,800)">
+
+
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1> 지각된 거리 및 정서 질문  </h1>
+      </div>
+      <div id="jb-content">
+
+        <h2 style="text-align:left; color:#212F3D; margin-bottom:25px;"> * 다음에 나오는 내용은 방금 시청한 내용에 관한 질문입니다. </br> 질문을 보고 당신이 가장 적절하게 느낀 곳에 체크해주세요. </h2>
+            <table class="rwd-table">
+                <thead>
+                    <tr>
+                        <th style="width:5%">   </th>
+                        <th style="width:45%"> 질문 </th>
+                        <th style="width:10%"> 매우 그렇지 않다 </br> 1</th>
+                        <th style="width:10%"> 그렇지</br> 않다 </br>2 </th>
+                        <th style="width:10%"> 보통이다 </br></br>3</th>
+                        <th style="width:10%"> 그렇다 </br></br> 4</th>
+                        <th style="width:10%"> 매우 </br>그렇다 </br> 5</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td style="text-align:left"> 로봇에 대한 연민이 느껴지는가? </td>
+                      <td> <input type="radio" name="dist1" value="1" ></td>
+                      <td> <input type="radio" name="dist1" value="2" >  </td>
+                      <td> <input type="radio" name="dist1" value="3" >  </td>
+                      <td> <input type="radio" name="dist1" value="4" >  </td>
+                      <td> <input type="radio" name="dist1" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td style="text-align:left"> 로봇의 입장에 동의하는가? </td>
+                      <td> <input type="radio" name="dist2" value="1" ></td>
+                      <td> <input type="radio" name="dist2" value="2" >  </td>
+                      <td> <input type="radio" name="dist2" value="3" >  </td>
+                      <td> <input type="radio" name="dist2" value="4" >  </td>
+                      <td> <input type="radio" name="dist2" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 3 </td>
+                      <td style="text-align:left"> 사람의 입장에 동의하는가? </td>
+                      <td> <input type="radio" name="dist3" value="1" ></td>
+                      <td> <input type="radio" name="dist3" value="2" >  </td>
+                      <td> <input type="radio" name="dist3" value="3" >  </td>
+                      <td> <input type="radio" name="dist3" value="4" >  </td>
+                      <td> <input type="radio" name="dist3" value="5" >  </td>
+                  </tr>
+                </tbody>
+            </table>
+
+        <h2 style="text-align:left; color:#212F3D; margin-bottom:30px; margin-top:30px; "> * 다음에 나오는 각 단어는 감정이나 기분을 기술한 것입니다. </br> 각 단어를 읽고, 현재 당신이 느끼는 기분의 정도를 가장 잘 나타낸 곳에 체크해주세요. </h2>
+            <table class="rwd-table">
+                <thead>
+                    <tr>
+                        <th style="width:5%">   </th>
+                        <th style="width:45%"> 질문 </th>
+                        <th style="width:10%"> 전혀 그렇지 않다 </br> 1</th>
+                        <th style="width:10%"> 약간 </br> 그렇다 </br>2 </th>
+                        <th style="width:10%"> 보통 정도로 그렇다 </br>3</th>
+                        <th style="width:10%"> 많이 </br> 그렇다 </br> 4</th>
+                        <th style="width:10%"> 매우 많이 </br>그렇다 </br> 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td style="text-align:left"> 흥미진진한 </td>
+                      <td> <input type="radio" name="pana1" value="1" > </td>
+                      <td> <input type="radio" name="pana1" value="2" >  </td>
+                      <td> <input type="radio" name="pana1" value="3" >  </td>
+                      <td> <input type="radio" name="pana1" value="4" >  </td>
+                      <td> <input type="radio" name="pana1" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 2 </td>
+                      <td style="text-align:left"> 과민한 </td>
+                      <td> <input type="radio" name="pana2" value="1" > </td>
+                      <td> <input type="radio" name="pana2" value="2" >  </td>
+                      <td> <input type="radio" name="pana2" value="3" >  </td>
+                      <td> <input type="radio" name="pana2" value="4" >  </td>
+                      <td> <input type="radio" name="pana2" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 3 </td>
+                      <td style="text-align:left"> 괴로운 </td>
+                      <td> <input type="radio" name="pana3" value="1" > </td>
+                      <td> <input type="radio" name="pana3" value="2" >  </td>
+                      <td> <input type="radio" name="pana3" value="3" >  </td>
+                      <td> <input type="radio" name="pana3" value="4" >  </td>
+                      <td> <input type="radio" name="pana3" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 4 </td>
+                      <td style="text-align:left"> 기민한 </td>
+                      <td> <input type="radio" name="pana4" value="1" > </td>
+                      <td> <input type="radio" name="pana4" value="2" >  </td>
+                      <td> <input type="radio" name="pana4" value="3" >  </td>
+                      <td> <input type="radio" name="pana4" value="4" >  </td>
+                      <td> <input type="radio" name="pana4" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 5 </td>
+                      <td style="text-align:left"> 흥분된 </td>
+                      <td> <input type="radio" name="pana5" value="1" > </td>
+                      <td> <input type="radio" name="pana5" value="2" >  </td>
+                      <td> <input type="radio" name="pana5" value="3" >  </td>
+                      <td> <input type="radio" name="pana5" value="4" >  </td>
+                      <td> <input type="radio" name="pana5" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 6 </td>
+                      <td style="text-align:left"> 부끄러운 </td>
+                      <td> <input type="radio" name="pana6" value="1" > </td>
+                      <td> <input type="radio" name="pana6" value="2" >  </td>
+                      <td> <input type="radio" name="pana6" value="3" >  </td>
+                      <td> <input type="radio" name="pana6" value="4" >  </td>
+                      <td> <input type="radio" name="pana6" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 7 </td>
+                      <td style="text-align:left"> 마음이 상한 </td>
+                      <td> <input type="radio" name="pana7" value="1" > </td>
+                      <td> <input type="radio" name="pana7" value="2" >  </td>
+                      <td> <input type="radio" name="pana7" value="3" >  </td>
+                      <td> <input type="radio" name="pana7" value="4" >  </td>
+                      <td> <input type="radio" name="pana7" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 8 </td>
+                      <td style="text-align:left"> 원기왕성한 </td>
+                      <td> <input type="radio" name="pana8" value="1" > </td>
+                      <td> <input type="radio" name="pana8" value="2" >  </td>
+                      <td> <input type="radio" name="pana8" value="3" >  </td>
+                      <td> <input type="radio" name="pana8" value="4" >  </td>
+                      <td> <input type="radio" name="pana8" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 9 </td>
+                      <td style="text-align:left"> 강한 </td>
+                      <td> <input type="radio" name="pana9" value="1" > </td>
+                      <td> <input type="radio" name="pana9" value="2" >  </td>
+                      <td> <input type="radio" name="pana9" value="3" >  </td>
+                      <td> <input type="radio" name="pana9" value="4" >  </td>
+                      <td> <input type="radio" name="pana9" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 10 </td>
+                      <td style="text-align:left"> 신경질적인 </td>
+                      <td> <input type="radio" name="pana10" value="1" > </td>
+                      <td> <input type="radio" name="pana10" value="2" >  </td>
+                      <td> <input type="radio" name="pana10" value="3" >  </td>
+                      <td> <input type="radio" name="pana10" value="4" >  </td>
+                      <td> <input type="radio" name="pana10" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 11 </td>
+                      <td style="text-align:left"> 죄책감드는 </td>
+                      <td> <input type="radio" name="pana11" value="1" > </td>
+                      <td> <input type="radio" name="pana11" value="2" >  </td>
+                      <td> <input type="radio" name="pana11" value="3" >  </td>
+                      <td> <input type="radio" name="pana11" value="4" >  </td>
+                      <td> <input type="radio" name="pana11" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 12 </td>
+                      <td style="text-align:left"> 단호한 </td>
+                      <td> <input type="radio" name="pana12" value="1" > </td>
+                      <td> <input type="radio" name="pana12" value="2" >  </td>
+                      <td> <input type="radio" name="pana12" value="3" >  </td>
+                      <td> <input type="radio" name="pana12" value="4" >  </td>
+                      <td> <input type="radio" name="pana12" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 13 </td>
+                      <td style="text-align:left"> 겁에 질린 </td>
+                      <td> <input type="radio" name="pana13" value="1" > </td>
+                      <td> <input type="radio" name="pana13" value="2" >  </td>
+                      <td> <input type="radio" name="pana13" value="3" >  </td>
+                      <td> <input type="radio" name="pana13" value="4" >  </td>
+                      <td> <input type="radio" name="pana13" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 14 </td>
+                      <td style="text-align:left"> 주의깊은 </td>
+                      <td> <input type="radio" name="pana14" value="1" > </td>
+                      <td> <input type="radio" name="pana14" value="2" >  </td>
+                      <td> <input type="radio" name="pana14" value="3" >  </td>
+                      <td> <input type="radio" name="pana14" value="4" >  </td>
+                      <td> <input type="radio" name="pana14" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 15 </td>
+                      <td style="text-align:left"> 적대적인 </td>
+                      <td> <input type="radio" name="pana15" value="1" > </td>
+                      <td> <input type="radio" name="pana15" value="2" >  </td>
+                      <td> <input type="radio" name="pana15" value="3" >  </td>
+                      <td> <input type="radio" name="pana15" value="4" >  </td>
+                      <td> <input type="radio" name="pana15" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 16 </td>
+                      <td style="text-align:left"> 조바심나는 </td>
+                      <td> <input type="radio" name="pana16" value="1" > </td>
+                      <td> <input type="radio" name="pana16" value="2" >  </td>
+                      <td> <input type="radio" name="pana16" value="3" >  </td>
+                      <td> <input type="radio" name="pana16" value="4" >  </td>
+                      <td> <input type="radio" name="pana16" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 17 </td>
+                      <td style="text-align:left"> 열정적인 </td>
+                      <td> <input type="radio" name="pana17" value="1" > </td>
+                      <td> <input type="radio" name="pana17" value="2" >  </td>
+                      <td> <input type="radio" name="pana17" value="3" >  </td>
+                      <td> <input type="radio" name="pana17" value="4" >  </td>
+                      <td> <input type="radio" name="pana17" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 18 </td>
+                      <td style="text-align:left"> 활기찬 </td>
+                      <td> <input type="radio" name="pana18" value="1" > </td>
+                      <td> <input type="radio" name="pana18" value="2" >  </td>
+                      <td> <input type="radio" name="pana18" value="3" >  </td>
+                      <td> <input type="radio" name="pana18" value="4" >  </td>
+                      <td> <input type="radio" name="pana18" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 19 </td>
+                      <td style="text-align:left"> 자랑스러운 </td>
+                      <td> <input type="radio" name="pana19" value="1" > </td>
+                      <td> <input type="radio" name="pana19" value="2" >  </td>
+                      <td> <input type="radio" name="pana19" value="3" >  </td>
+                      <td> <input type="radio" name="pana19" value="4" >  </td>
+                      <td> <input type="radio" name="pana19" value="5" >  </td>
+                  </tr>
+                  <tr>
+                      <td> 20 </td>
+                      <td style="text-align:left"> 두려운 </td>
+                      <td> <input type="radio" name="pana20" value="1" > </td>
+                      <td> <input type="radio" name="pana20" value="2" >  </td>
+                      <td> <input type="radio" name="pana20" value="3" >  </td>
+                      <td> <input type="radio" name="pana20" value="4" >  </td>
+                      <td> <input type="radio" name="pana20" value="5" >  </td>
+                  </tr>
+                </tbody>
+            </table>
+
+        <h2 style="text-align:left; color:#212F3D; margin-bottom:25px; margin-top:25px; "> 조작 체크 </h2>
+            <table class="rwd-table">
+                <thead>
+                    <tr>
+                        <th style="width:5%">   </th>
+                        <th style="width:45%"> 질문 </th>
+                        <th style="width:10%"> 매우 그렇지 않다 </br> 1</th>
+                        <th style="width:10%"> 그렇지</br> 않다 </br>2 </th>
+                        <th style="width:10%"> 보통이다 </br></br>3</th>
+                        <th style="width:10%"> 그렇다 </br></br> 4</th>
+                        <th style="width:10%"> 매우 </br>그렇다 </br> 5</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                      <td> 1 </td>
+                      <td style="text-align:left"> </td>
+                      <td> <input type="radio" name="check1" value="1" ></td>
+                      <td> <input type="radio" name="check1" value="2" >  </td>
+                      <td> <input type="radio" name="check1" value="3" >  </td>
+                      <td> <input type="radio" name="check1" value="4" >  </td>
+                      <td> <input type="radio" name="check1" value="5" >  </td>
+                  </tr>
+                </tbody>
+            </table>
+      </div>
+      <div id="jb-footer" >
+          <div style="float:right">   <button class="w-btn-outline w-btn-gray-outline" onclick="location.href='{% url 'p6' %}'" style="text-align:center"> 다음 </button>  </div>
+      </div>
+    </div>
+
+</body>
+</html>
